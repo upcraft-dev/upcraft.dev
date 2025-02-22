@@ -7,7 +7,7 @@
   import SocialLink from "$components/SocialLink.svelte";
   import Meta from "$components/Meta.svelte";
   import Footer from "$components/Footer.svelte";
-  import "$css/fonts/gisha.postcss";
+  import "$css/fonts/gisha.css";
 </script>
 
 <svelte:head>

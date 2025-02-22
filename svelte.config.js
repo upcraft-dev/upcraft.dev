@@ -23,7 +23,7 @@ function firstDefined(...params) {
 const config = {
   // Consult https://kit.svelte.dev/docs/integrations#preprocessors
   // for more information about preprocessors
-  preprocess: [vitePreprocess({})],
+  preprocess: [vitePreprocess()],
 
   kit: {
     // adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
@@ -46,7 +46,11 @@ const config = {
         "/.well-known/security.txt",
         "/.well-known/atproto-did",
       ],
-      origin: firstDefined(env.FRONTEND_URL, env.CF_PAGES_URL, 'https://upcraft.dev')
+      origin: firstDefined(
+        env.FRONTEND_URL,
+        env.CF_PAGES_URL,
+        "https://upcraft.dev",
+      ),
     },
   },
 };

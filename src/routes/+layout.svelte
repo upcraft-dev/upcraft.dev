@@ -1,5 +1,5 @@
 <script lang="ts">
-  import "$css/app.postcss";
+  import "$css/app.css";
   let { children } = $props();
 </script>
 
