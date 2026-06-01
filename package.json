@@ -26,7 +26,7 @@
     "@tailwindcss/vite": "^4.0.8",
     "@threlte/core": "^8.0.1",
     "@types/three": "^0.173.0",
-    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
     "@typescript-eslint/parser": "^8.24.1",
     "@yushijinhun/three-minifier-rollup": "^0.4.0",
     "classnames": "^2.5.1",
