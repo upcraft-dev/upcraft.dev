@@ -14,7 +14,7 @@
     "format": "prettier . --write"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.0",
