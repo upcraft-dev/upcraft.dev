@@ -24,7 +24,7 @@
   const imageAlt = "Up's profile picture";
   const imageSize = { width: 1080, height: 1080 };
 
-  const formattedTitle = `${title} - ${siteName}`;
+  const formattedTitle = () => `${title} - ${siteName}`;
 </script>
 
 <MetaTags
@@ -35,7 +35,7 @@
   twitter={{
     cardType: "summary",
     site: twitterHandle,
-    title: formattedTitle,
+    title: formattedTitle(),
     description: description,
     image,
     imageAlt,
@@ -43,7 +43,7 @@
   }}
   openGraph={{
     url: currentPageUrl,
-    title: formattedTitle,
+    title: formattedTitle(),
     description: description,
     images: [
       {
