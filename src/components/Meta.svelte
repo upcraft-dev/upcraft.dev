@@ -13,8 +13,6 @@
 
   let { title, description = $bindable(undefined), noindex = false }: Props = $props();
 
-  const twitterHandle = "@upcraftlp";
-
   const siteName = hostname;
 
   const currentPageUrl: string = $page.url.toString();
@@ -32,15 +30,6 @@
   titleTemplate={`%s - ${hostname}`}
   {description}
   canonical={currentPageUrl}
-  twitter={{
-    cardType: "summary",
-    site: twitterHandle,
-    title: formattedTitle(),
-    description: description,
-    image,
-    imageAlt,
-    creator: twitterHandle,
-  }}
   openGraph={{
     url: currentPageUrl,
     title: formattedTitle(),
