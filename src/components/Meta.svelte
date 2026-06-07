@@ -49,4 +49,5 @@
   {#if noindex}
     <meta name="robots" content="noindex" />
   {/if}
+  <meta name="referrer" content="same-origin" />
 </svelte:head>
