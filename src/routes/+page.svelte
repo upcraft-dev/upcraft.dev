@@ -18,7 +18,13 @@
     as="image"
     media="screen"
   />
-  <link rel="preload" fetchpriority="high" href="/images/hero_bg.webp" as="image" media="screen" />
+  <link
+    rel="preload"
+    fetchpriority="high"
+    href="/images/hero_bg.webp"
+    as="image"
+    media="screen"
+  />
   <link
     rel="preload"
     fetchpriority="high"
