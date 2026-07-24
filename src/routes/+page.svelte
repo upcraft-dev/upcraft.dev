@@ -40,7 +40,7 @@
   <div
     class="relative flex flex-col items-center justify-center w-11/12 m-auto bg-center bg-cover bg-[url('/images/hero_bg.webp')] h-[88lvh] rounded-xl text-gray-50 mt-3 xl:mt-auto"
   >
-    <div class="space-y-2 text-center font-gisha">
+    <main class="space-y-2 text-center font-gisha">
       <img
         src="/images/profile_picture_128x.webp"
         width="128"
@@ -61,7 +61,7 @@
           <MdiExternalLink class="w-4 h-4" tabindex={-1} />
         </h3>
       </SocialLink>
-    </div>
+    </main>
     <div
       class="absolute flex flex-row items-end justify-end gap-2 text-base bottom-2"
     >
