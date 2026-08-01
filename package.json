@@ -30,7 +30,7 @@
     "@typescript-eslint/parser": "^8.65.0",
     "@yushijinhun/three-minifier-rollup": "^0.4.0",
     "classnames": "^2.5.1",
-    "eslint": "^10.7.0",
+    "eslint": "^10.8.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-svelte": "^3.22.0",
     "globals": "^17.7.0",
