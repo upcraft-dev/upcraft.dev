@@ -1,4 +1,4 @@
 Contact: https://upcraft.dev/links/discord
 Contact: https://upcraft.dev/links/bluesky
-Expires: 2025-01-01T00:00:00.000Z
+Expires: 2028-01-01T00:00:00.000Z
 Canonical: https://upcraft.dev/.well-known/security.txt
