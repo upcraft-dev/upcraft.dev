@@ -1,4 +1,4 @@
-import { atProto } from "$lib/server/socials";
+import { atProto } from "$lib/socials";
 import type { RequestHandler, EntryGenerator } from "./$types";
 import securityTxt from "./security.txt?raw";
 
