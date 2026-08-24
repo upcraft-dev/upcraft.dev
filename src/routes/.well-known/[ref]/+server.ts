@@ -19,7 +19,7 @@ export const GET: RequestHandler = ({ params }) => {
     });
   }
 
-  const response = routes[params.slug]();
+  const response = routes[params.ref]();
 
   return new Response(response, {
     headers: {
