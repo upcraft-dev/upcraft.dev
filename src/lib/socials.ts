@@ -147,3 +147,13 @@ export const socialListings: SocialListing[] = [
     colorLight: "hover:text-gray-950",
   },
 ];
+
+export function lookup(): Map<string, SocialsProfile> {
+  const map = new Map<string, SocialsProfile>();
+  allSocials.forEach(profile => {
+    profile.aliases.forEach(alias => {
+      map.set(alias, profile);
+    });
+  });
+  return map;
+}
