@@ -1,4 +1,5 @@
 import { atProto } from "$lib/socials";
+import { error } from "@sveltejs/kit";
 import type { RequestHandler, EntryGenerator } from "./$types";
 import securityTxt from "./security.txt?raw";
 
@@ -14,12 +15,14 @@ const routes: Routes = {
 
 export const GET: RequestHandler = ({ params }) => {
   if (params.ref === undefined) {
-    return new Response(null, {
-      status: 404,
-    });
+    error(404);
   }
 
-  const response = routes[params.ref]();
+  const route = routes[params.ref];
+  if(route === undefined) {
+    error(404);
+  }
+  const response = route();
 
   return new Response(response, {
     headers: {
