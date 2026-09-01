@@ -27,7 +27,7 @@
     "@threlte/core": "^8.5.16",
     "@types/three": "^0.185.4",
     "@typescript-eslint/eslint-plugin": "^8.67.0",
-    "@typescript-eslint/parser": "^8.67.0",
+    "@typescript-eslint/parser": "^8.68.0",
     "@yushijinhun/three-minifier-rollup": "^0.4.0",
     "classnames": "^2.5.1",
     "eslint": "^10.9.0",
