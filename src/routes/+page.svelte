@@ -53,10 +53,10 @@
         <h2 class="tracking-wide">Indie game developer</h2>
         <h2 class="tracking-tight">Java, C#, Web</h2>
       </div>
-      <hr class="pb-1" />
+      <hr class="mb-0.5" />
       <SocialLink name="Donate on Ko-fi" target="ko-fi">
         <h3 class="inline-flex items-center gap-1 text-2xl font-medium">
-          <MdiHeart class="w-6 h-6 text-pink-500" tabindex={-1} />
+          <MdiHeart class="w-8 h-8 text-pink-500" tabindex={-1} />
           <p class="group-hover:underline group-focus:underline">Support me!</p>
           <MdiExternalLink class="w-4 h-4" tabindex={-1} />
         </h3>
