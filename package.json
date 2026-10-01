@@ -17,7 +17,7 @@
     "node": ">=24"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.6",
+    "@eslint/eslintrc": "^3.3.7",
     "@eslint/js": "^10.0.1",
     "@iconify/json": "^2.2.534",
     "@sveltejs/adapter-cloudflare": "^7.2.9",
