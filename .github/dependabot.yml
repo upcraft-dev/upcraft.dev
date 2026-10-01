@@ -8,3 +8,5 @@ updates:
       default-days: 5
     schedule:
       interval: monthly
+    commit-message:
+      prefix: "⬆️"
