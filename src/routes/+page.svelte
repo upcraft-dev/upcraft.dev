@@ -4,10 +4,10 @@
   import SimpleIconsBluesky from "~icons/simple-icons/bluesky";
   import SimpleIconsDiscord from "~icons/simple-icons/discord";
   import SimpleIconsGithub from "~icons/simple-icons/github";
-  import SocialLink from "$components/SocialLink.svelte";
-  import Meta from "$components/Meta.svelte";
-  import Footer from "$components/Footer.svelte";
-  import "$css/fonts/gisha.css";
+  import SocialLink from "#components/SocialLink";
+  import Meta from "#components/Meta";
+  import Footer from "#components/Footer";
+  import "#css/fonts/gisha";
 </script>
 
 <svelte:head>

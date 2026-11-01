@@ -1,11 +1,14 @@
 import { redirect } from "@sveltejs/kit";
 import type { EntryGenerator, RequestHandler } from "./$types";
-import { lookup } from "$lib/socials";
+import { lookup } from "#lib/socials";
 
 export const entries: EntryGenerator = () => {
-  return lookup().keys().map((key) => ({
+  return lookup()
+    .keys()
+    .map((key) => ({
       ref: key,
-    })).toArray();
+    }))
+    .toArray();
 };
 
 export const GET: RequestHandler = ({ params }) => {
@@ -16,6 +19,5 @@ export const GET: RequestHandler = ({ params }) => {
     redirect(302, "/links?error=notfound");
   }
 
-  redirect(302, target.url);
+  redirect(302, target.url, { external: true });
 };
-

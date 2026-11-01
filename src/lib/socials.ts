@@ -14,81 +14,81 @@ export interface SocialsProfile {
 }
 
 export const atProto = {
-  did: "did:plc:77uzn2lx2zhtdgr5zfvzumji"
+  did: "did:plc:77uzn2lx2zhtdgr5zfvzumji",
 };
 export const bluesky: SocialsProfile = {
   url: `https://bsky.app/profile/${atProto.did}`,
-  aliases: ["bsky", "bluesky"]
+  aliases: ["bsky", "bluesky"],
 };
 
 // TODO discord
 export const discordProfile = {
-  snowflake: "137502892167921664"
+  snowflake: "137502892167921664",
 };
 export const discord: SocialsProfile = {
   url: "https://mods.upcraft.dev/discord",
-  aliases: ["discord"]
+  aliases: ["discord"],
 };
 
 export const kofi: SocialsProfile = {
   url: "https://ko-fi.com/upcraftlp",
-  aliases: ["ko-fi", "kofi"]
+  aliases: ["ko-fi", "kofi"],
 };
 
 export const twitch: SocialsProfile = {
   url: "https://twitch.tv/upcraftlp",
-  aliases: ["twitch"]
+  aliases: ["twitch"],
 };
 
 export const youtube: SocialsProfile = {
   url: "https://youtube.com/@upcraft_",
-  aliases: ["youtube", "yt"]
+  aliases: ["youtube", "yt"],
 };
 
 export const steam: SocialsProfile = {
   url: "https://steamcommunity.com/profiles/76561198101277934",
-  aliases: ["steam"]
-}
+  aliases: ["steam"],
+};
 
 export const github: SocialsProfile = {
   url: "https://github.com/upcraftlp",
-  aliases: ["github", "gh"]
+  aliases: ["github", "gh"],
 };
 
 export const medium: SocialsProfile = {
   url: "https://medium.com/@up_",
-  aliases: ["medium"]
-}
+  aliases: ["medium"],
+};
 
 // modding
 export const curseforge: SocialsProfile = {
   url: "https://www.curseforge.com/members/upcraftlp/projects",
-  aliases: ["curseforge", "cf"]
+  aliases: ["curseforge", "cf"],
 };
 export const modrinth: SocialsProfile = {
   url: "https://modrinth.com/user/Ef5Yk50C",
-  aliases: ["modrinth", "mr"]
+  aliases: ["modrinth", "mr"],
 };
 export const moddingDiscord: SocialsProfile = {
   url: "https://mods.upcraft.dev/discord",
-  aliases: ["discord-modding"]
+  aliases: ["discord-modding"],
 };
 
 // games
 export const games: SocialsProfile = {
   url: "https://up-does.games",
-  aliases: ["games", "gaming"]
+  aliases: ["games", "gaming"],
 };
 export const itchIO = {
   url: "https://upcraftlp.itch.io",
-  aliases: ["itch", "itchio", "itch-io"]
+  aliases: ["itch", "itchio", "itch-io"],
 };
 
 export const visibleSocials: SocialsProfile[] = [
   bluesky,
   github,
   curseforge,
-  modrinth
+  modrinth,
 ];
 
 export const allSocials: SocialsProfile[] = [
@@ -104,13 +104,13 @@ export const allSocials: SocialsProfile[] = [
   modrinth,
   moddingDiscord,
   games,
-  itchIO
+  itchIO,
 ];
 
 export interface SocialListing {
   readonly id: string;
   readonly displayName?: string;
-  readonly icon?: Component<SvelteHTMLElements['svg']>;
+  readonly icon?: Component<SvelteHTMLElements["svg"]>;
   readonly colorDark?: string;
   readonly colorLight?: string;
 }
@@ -120,13 +120,13 @@ export const socialListings: SocialListing[] = [
     id: "bluesky",
     displayName: "BlueSky",
     icon: SimpleIconsBluesky,
-    colorLight: "hover:text-sky-500"
+    colorLight: "hover:text-sky-500",
   },
   {
     id: "discord",
     displayName: "Discord",
     icon: SimpleIconsDiscord,
-    colorLight: "hover:text-[#738ADB]"
+    colorLight: "hover:text-[#738ADB]",
   },
   {
     id: "curseforge",
@@ -150,8 +150,8 @@ export const socialListings: SocialListing[] = [
 
 export function lookup(): Map<string, SocialsProfile> {
   const map = new Map<string, SocialsProfile>();
-  allSocials.forEach(profile => {
-    profile.aliases.forEach(alias => {
+  allSocials.forEach((profile) => {
+    profile.aliases.forEach((alias) => {
       map.set(alias, profile);
     });
   });

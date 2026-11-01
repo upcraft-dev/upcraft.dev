@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { browser } from "$app/environment";
+  import { browser } from '$app/env';
   import type { ChangeEventHandler } from "svelte/elements";
-  import Footer from "$components/Footer.svelte";
-  import Meta from "$components/Meta.svelte";
+  import Footer from "#components/Footer";
+  import Meta from "#components/Meta";
 
   function formSubmit(event: SubmitEvent) {
     event.preventDefault();
@@ -103,10 +103,13 @@
           width="1024"
           height="1024"
           class="bg-white p-4 w-64 h-64 md:w-96 md:h-96 border border-gray-300 rounded-xl"
+        >Your browser does not support the HTML5 canvas tag.</canvas>
+
+        <form
+          id="input-form"
+          onsubmit={formSubmit}
+          class="w-fit"
         >
-          Your browser does not support the HTML5 canvas tag.
-        </canvas>
-        <form id="input-form" onsubmit={formSubmit} class="w-fit">
           <label for="input-image" class="block mt-4">Upload your Image:</label>
           <input
             type="file"

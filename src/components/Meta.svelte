@@ -1,9 +1,9 @@
 <script lang="ts">
   import { MetaTags } from "svelte-meta-tags";
-  import { page } from "$app/stores";
+  import { page } from '$app/state';
 
-  const hostname = $page.url.hostname;
-  const baseUrl = $page.url.origin;
+  const hostname = page.url.hostname;
+  const baseUrl = page.url.origin;
 
   interface Props {
     title: string;
@@ -15,7 +15,7 @@
 
   const siteName = hostname;
 
-  const currentPageUrl: string = $page.url.toString();
+  const currentPageUrl: string = page.url.toString();
   description = description || "Indie game developer, Java, C#, Web";
 
   const image = `${baseUrl}/images/profile_picture.webp`;
@@ -26,14 +26,14 @@
 </script>
 
 <MetaTags
-  {title}
+  title={title}
   titleTemplate={`%s - ${hostname}`}
-  {description}
+  description={description}
   canonical={currentPageUrl}
   openGraph={{
     url: currentPageUrl,
     title: formattedTitle(),
-    description: description,
+    description,
     images: [
       {
         url: image,
@@ -42,7 +42,7 @@
         alt: imageAlt,
       },
     ],
-    siteName: siteName,
+    siteName
   }}
 />
 <svelte:head>
